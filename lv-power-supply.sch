@@ -1,0 +1,572 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:VIPer26LN U?
+U 1 1 625AEEEC
+P 5750 3000
+AR Path="/625AEEEC" Ref="U?"  Part="1" 
+AR Path="/6253F1DC/625AEEEC" Ref="U101"  Part="1" 
+F 0 "U101" H 5750 3581 50  0000 C CNN
+F 1 "VIPer26LN" H 5750 3490 50  0000 C CNN
+F 2 "Package_DIP:DIP-8-N6_W7.62mm" H 5750 2500 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/viper26.pdf" H 5750 3000 50  0001 C CNN
+	1    5750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 625AEEF2
+P 6500 2900
+AR Path="/625AEEF2" Ref="D?"  Part="1" 
+AR Path="/6253F1DC/625AEEF2" Ref="D109"  Part="1" 
+F 0 "D109" H 6500 2683 50  0000 C CNN
+F 1 "D" H 6500 2774 50  0000 C CNN
+F 2 "" H 6500 2900 50  0001 C CNN
+F 3 "~" H 6500 2900 50  0001 C CNN
+	1    6500 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 625AEEF8
+P 6650 2900
+F 0 "#PWR?" H 6650 2750 50  0001 C CNN
+F 1 "VBUS" H 6665 3073 50  0000 C CNN
+F 2 "" H 6650 2900 50  0001 C CNN
+F 3 "" H 6650 2900 50  0001 C CNN
+	1    6650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2900 6350 2900
+$Comp
+L Device:C C?
+U 1 1 625AEEFF
+P 6200 3400
+AR Path="/625AEEFF" Ref="C?"  Part="1" 
+AR Path="/6253F1DC/625AEEFF" Ref="C110"  Part="1" 
+F 0 "C110" V 5948 3400 50  0000 C CNN
+F 1 "4.7uF" V 6039 3400 50  0000 C CNN
+F 2 "" H 6238 3250 50  0001 C CNN
+F 3 "~" H 6200 3400 50  0001 C CNN
+	1    6200 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 3400 5750 3400
+Connection ~ 5750 3400
+Wire Wire Line
+	6350 3400 6350 2900
+Connection ~ 6350 2900
+$Comp
+L Device:L L?
+U 1 1 625AEF09
+P 5050 3800
+AR Path="/625AEF09" Ref="L?"  Part="1" 
+AR Path="/6253F1DC/625AEF09" Ref="L101"  Part="1" 
+F 0 "L101" V 4869 3800 50  0000 C CNN
+F 1 "102" V 4960 3800 50  0000 C CNN
+F 2 "" H 5050 3800 50  0001 C CNN
+F 3 "~" H 5050 3800 50  0001 C CNN
+	1    5050 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 625AEF0F
+P 5200 2600
+AR Path="/625AEF0F" Ref="C?"  Part="1" 
+AR Path="/6253F1DC/625AEF0F" Ref="C104"  Part="1" 
+F 0 "C104" V 4948 2600 50  0000 C CNN
+F 1 "C" V 5039 2600 50  0000 C CNN
+F 2 "" H 5238 2450 50  0001 C CNN
+F 3 "~" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 2600 5750 2600
+$Comp
+L Device:C C?
+U 1 1 625AEF16
+P 4700 3150
+AR Path="/625AEF16" Ref="C?"  Part="1" 
+AR Path="/6253F1DC/625AEF16" Ref="C124"  Part="1" 
+F 0 "C124" H 4815 3196 50  0000 L CNN
+F 1 "C" H 4815 3105 50  0000 L CNN
+F 2 "" H 4738 3000 50  0001 C CNN
+F 3 "~" H 4700 3150 50  0001 C CNN
+	1    4700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 625AEF1C
+P 4450 3150
+AR Path="/625AEF1C" Ref="R?"  Part="1" 
+AR Path="/6253F1DC/625AEF1C" Ref="R121"  Part="1" 
+F 0 "R121" H 4520 3196 50  0000 L CNN
+F 1 "100k" H 4520 3105 50  0000 L CNN
+F 2 "" V 4380 3150 50  0001 C CNN
+F 3 "~" H 4450 3150 50  0001 C CNN
+	1    4450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3000 4700 3000
+Connection ~ 4700 3000
+Wire Wire Line
+	4700 3000 5350 3000
+Wire Wire Line
+	4450 3300 4700 3300
+Wire Wire Line
+	4700 3300 4900 3300
+Wire Wire Line
+	5300 3300 5300 3400
+Wire Wire Line
+	5300 3400 5750 3400
+Connection ~ 4700 3300
+Wire Wire Line
+	5050 2600 5050 3300
+Connection ~ 5050 3300
+Wire Wire Line
+	5050 3300 5300 3300
+Wire Wire Line
+	4900 3800 4900 3300
+Connection ~ 4900 3300
+Wire Wire Line
+	4900 3300 5050 3300
+$Comp
+L Device:D D?
+U 1 1 625AEF30
+P 4750 3800
+AR Path="/625AEF30" Ref="D?"  Part="1" 
+AR Path="/6253F1DC/625AEF30" Ref="D102"  Part="1" 
+F 0 "D102" H 4750 4017 50  0000 C CNN
+F 1 "D" H 4750 3926 50  0000 C CNN
+F 2 "" H 4750 3800 50  0001 C CNN
+F 3 "~" H 4750 3800 50  0001 C CNN
+	1    4750 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 3800
+$Comp
+L power:GND #PWR?
+U 1 1 625AEF37
+P 4600 3800
+F 0 "#PWR?" H 4600 3550 50  0001 C CNN
+F 1 "GND" H 4605 3627 50  0000 C CNN
+F 2 "" H 4600 3800 50  0001 C CNN
+F 3 "" H 4600 3800 50  0001 C CNN
+	1    4600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 625AEF3D
+P 5350 3800
+AR Path="/625AEF3D" Ref="D?"  Part="1" 
+AR Path="/6253F1DC/625AEF3D" Ref="D101"  Part="1" 
+F 0 "D101" H 5350 4017 50  0000 C CNN
+F 1 "D" H 5350 3926 50  0000 C CNN
+F 2 "" H 5350 3800 50  0001 C CNN
+F 3 "~" H 5350 3800 50  0001 C CNN
+	1    5350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 625AEF43
+P 5800 3650
+AR Path="/625AEF43" Ref="D?"  Part="1" 
+AR Path="/6253F1DC/625AEF43" Ref="D107"  Part="1" 
+F 0 "D107" H 5800 3867 50  0000 C CNN
+F 1 "D_Zener" H 5800 3776 50  0000 C CNN
+F 2 "" H 5800 3650 50  0001 C CNN
+F 3 "~" H 5800 3650 50  0001 C CNN
+	1    5800 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3650 5200 3650
+Wire Wire Line
+	5200 3650 5200 3800
+Connection ~ 5200 3800
+Wire Wire Line
+	5950 3650 5950 3800
+Wire Wire Line
+	5950 3800 5650 3800
+Wire Wire Line
+	5650 3800 5650 3900
+$Comp
+L Device:D_Zener D?
+U 1 1 625AEF4F
+P 5800 3900
+AR Path="/625AEF4F" Ref="D?"  Part="1" 
+AR Path="/6253F1DC/625AEF4F" Ref="D110"  Part="1" 
+F 0 "D110" H 5800 4117 50  0000 C CNN
+F 1 "D_Zener" H 5800 4026 50  0000 C CNN
+F 2 "" H 5800 3900 50  0001 C CNN
+F 3 "~" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 625AEF55
+P 5050 4050
+AR Path="/625AEF55" Ref="C?"  Part="1" 
+AR Path="/6253F1DC/625AEF55" Ref="C101"  Part="1" 
+F 0 "C101" V 4795 4050 50  0000 C CNN
+F 1 "CP" V 4886 4050 50  0000 C CNN
+F 2 "" H 5088 3900 50  0001 C CNN
+F 3 "~" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 4050 5200 3800
+$Comp
+L power:GND #PWR?
+U 1 1 625AEF5C
+P 4900 4050
+F 0 "#PWR?" H 4900 3800 50  0001 C CNN
+F 1 "GND" H 4905 3877 50  0000 C CNN
+F 2 "" H 4900 4050 50  0001 C CNN
+F 3 "" H 4900 4050 50  0001 C CNN
+	1    4900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AZ1117-3.3 U?
+U 1 1 625AEF62
+P 6700 4000
+AR Path="/625AEF62" Ref="U?"  Part="1" 
+AR Path="/6253F1DC/625AEF62" Ref="U102"  Part="1" 
+F 0 "U102" H 6700 4242 50  0000 C CNN
+F 1 "AZ1117-3.3" H 6700 4151 50  0000 C CNN
+F 2 "" H 6700 4250 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 6700 4000 50  0001 C CNN
+	1    6700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3900 6200 3900
+Wire Wire Line
+	6400 3900 6400 4000
+$Comp
+L power:GND #PWR?
+U 1 1 625AEF6A
+P 6700 4700
+F 0 "#PWR?" H 6700 4450 50  0001 C CNN
+F 1 "GND" H 6705 4527 50  0000 C CNN
+F 2 "" H 6700 4700 50  0001 C CNN
+F 3 "" H 6700 4700 50  0001 C CNN
+	1    6700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4700 6700 4650
+$Comp
+L Device:C C?
+U 1 1 625AEF71
+P 6350 4400
+AR Path="/625AEF71" Ref="C?"  Part="1" 
+AR Path="/6253F1DC/625AEF71" Ref="C122"  Part="1" 
+F 0 "C122" V 6098 4400 50  0000 C CNN
+F 1 "C" V 6189 4400 50  0000 C CNN
+F 2 "" H 6388 4250 50  0001 C CNN
+F 3 "~" H 6350 4400 50  0001 C CNN
+	1    6350 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 625AEF77
+P 6350 4650
+AR Path="/625AEF77" Ref="C?"  Part="1" 
+AR Path="/6253F1DC/625AEF77" Ref="C116"  Part="1" 
+F 0 "C116" V 6098 4650 50  0000 C CNN
+F 1 "C" V 6189 4650 50  0000 C CNN
+F 2 "" H 6388 4500 50  0001 C CNN
+F 3 "~" H 6350 4650 50  0001 C CNN
+	1    6350 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 4650 6700 4650
+Connection ~ 6700 4650
+Wire Wire Line
+	6700 4650 6700 4400
+Wire Wire Line
+	6500 4400 6700 4400
+Connection ~ 6700 4400
+Wire Wire Line
+	6700 4400 6700 4300
+Wire Wire Line
+	6200 3900 6200 4400
+Connection ~ 6200 3900
+Wire Wire Line
+	6200 3900 6400 3900
+Connection ~ 6200 4400
+Wire Wire Line
+	6200 4400 6200 4650
+$Comp
+L power:VDD #PWR?
+U 1 1 625AEF88
+P 7000 4000
+F 0 "#PWR?" H 7000 3850 50  0001 C CNN
+F 1 "VDD" H 7015 4173 50  0000 C CNN
+F 2 "" H 7000 4000 50  0001 C CNN
+F 3 "" H 7000 4000 50  0001 C CNN
+	1    7000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 625AEF8E
+P 6850 4400
+AR Path="/625AEF8E" Ref="C?"  Part="1" 
+AR Path="/6253F1DC/625AEF8E" Ref="C118"  Part="1" 
+F 0 "C118" V 6598 4400 50  0000 C CNN
+F 1 "C" V 6689 4400 50  0000 C CNN
+F 2 "" H 6888 4250 50  0001 C CNN
+F 3 "~" H 6850 4400 50  0001 C CNN
+	1    6850 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 625AEF94
+P 6850 4650
+AR Path="/625AEF94" Ref="C?"  Part="1" 
+AR Path="/6253F1DC/625AEF94" Ref="C120"  Part="1" 
+F 0 "C120" V 6598 4650 50  0000 C CNN
+F 1 "C" V 6689 4650 50  0000 C CNN
+F 2 "" H 6888 4500 50  0001 C CNN
+F 3 "~" H 6850 4650 50  0001 C CNN
+	1    6850 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 4000 7000 4400
+Connection ~ 7000 4000
+Connection ~ 7000 4400
+Wire Wire Line
+	7000 4400 7000 4650
+$Comp
+L Device:R R?
+U 1 1 625AEF9E
+P 7000 4800
+AR Path="/625AEF9E" Ref="R?"  Part="1" 
+AR Path="/6253F1DC/625AEF9E" Ref="R104"  Part="1" 
+F 0 "R104" H 7070 4846 50  0000 L CNN
+F 1 "337" H 7070 4755 50  0000 L CNN
+F 2 "" V 6930 4800 50  0001 C CNN
+F 3 "~" H 7000 4800 50  0001 C CNN
+	1    7000 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 4650
+$Comp
+L power:GND #PWR?
+U 1 1 625AEFA5
+P 7000 4950
+F 0 "#PWR?" H 7000 4700 50  0001 C CNN
+F 1 "GND" H 7005 4777 50  0000 C CNN
+F 2 "" H 7000 4950 50  0001 C CNN
+F 3 "" H 7000 4950 50  0001 C CNN
+	1    7000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 625AEFAB
+P 6200 3900
+F 0 "#PWR?" H 6200 3750 50  0001 C CNN
+F 1 "+15V" H 6215 4073 50  0000 C CNN
+F 2 "" H 6200 3900 50  0001 C CNN
+F 3 "" H 6200 3900 50  0001 C CNN
+	1    6200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 625AEFB1
+P 7200 4150
+AR Path="/625AEFB1" Ref="D?"  Part="1" 
+AR Path="/6253F1DC/625AEFB1" Ref="D112"  Part="1" 
+F 0 "D112" V 7154 4230 50  0000 L CNN
+F 1 "D" V 7245 4230 50  0000 L CNN
+F 2 "" H 7200 4150 50  0001 C CNN
+F 3 "~" H 7200 4150 50  0001 C CNN
+	1    7200 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 4000 7200 4000
+$Comp
+L power:GND #PWR?
+U 1 1 625AEFB8
+P 7200 4300
+F 0 "#PWR?" H 7200 4050 50  0001 C CNN
+F 1 "GND" H 7205 4127 50  0000 C CNN
+F 2 "" H 7200 4300 50  0001 C CNN
+F 3 "" H 7200 4300 50  0001 C CNN
+	1    7200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 625AEFBE
+P 5100 4750
+AR Path="/625AEFBE" Ref="R?"  Part="1" 
+AR Path="/6253F1DC/625AEFBE" Ref="R105"  Part="1" 
+F 0 "R105" H 4893 4750 50  0000 C CNN
+F 1 "62k" H 4900 4650 50  0000 C CNN
+F 2 "" V 5030 4750 50  0001 C CNN
+F 3 "~" H 5100 4750 50  0001 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 625AEFC4
+P 5500 4750
+AR Path="/625AEFC4" Ref="C?"  Part="1" 
+AR Path="/6253F1DC/625AEFC4" Ref="C102"  Part="1" 
+F 0 "C102" H 5248 4750 50  0000 C CNN
+F 1 "C" H 5250 4650 50  0000 C CNN
+F 2 "" H 5538 4600 50  0001 C CNN
+F 3 "~" H 5500 4750 50  0001 C CNN
+	1    5500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 625AEFCA
+P 4750 4600
+AR Path="/625AEFCA" Ref="D?"  Part="1" 
+AR Path="/6253F1DC/625AEFCA" Ref="D103"  Part="1" 
+F 0 "D103" H 4750 4383 50  0000 C CNN
+F 1 "D" H 4750 4474 50  0000 C CNN
+F 2 "" H 4750 4600 50  0001 C CNN
+F 3 "~" H 4750 4600 50  0001 C CNN
+	1    4750 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 3800 5500 4600
+Wire Wire Line
+	5500 4600 5100 4600
+Connection ~ 5500 4600
+Connection ~ 5100 4600
+Wire Wire Line
+	5100 4600 4900 4600
+$Comp
+L Device:R R106
+U 1 1 625C6351
+P 5250 5150
+F 0 "R106" V 5457 5150 50  0000 C CNN
+F 1 "16.1k" V 5366 5150 50  0000 C CNN
+F 2 "" V 5180 5150 50  0001 C CNN
+F 3 "~" H 5250 5150 50  0001 C CNN
+	1    5250 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 4900 5100 5000
+Wire Wire Line
+	5400 5150 5500 5150
+Wire Wire Line
+	5500 5150 5500 4900
+Wire Wire Line
+	4600 4600 4300 4600
+Wire Wire Line
+	4300 4600 4300 2600
+Wire Wire Line
+	4300 2600 5050 2600
+Connection ~ 5050 2600
+Wire Wire Line
+	5100 5000 6100 5000
+Wire Wire Line
+	6100 5000 6100 3600
+Wire Wire Line
+	6100 3600 6500 3600
+Wire Wire Line
+	6500 3600 6500 3100
+Wire Wire Line
+	6500 3100 6150 3100
+Connection ~ 5100 5000
+Wire Wire Line
+	5100 5000 5100 5150
+$Comp
+L Device:C C123
+U 1 1 625D0150
+P 5950 5300
+F 0 "C123" H 5835 5254 50  0000 R CNN
+F 1 "C" H 5835 5345 50  0000 R CNN
+F 2 "" H 5988 5150 50  0001 C CNN
+F 3 "~" H 5950 5300 50  0001 C CNN
+	1    5950 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C108
+U 1 1 625D1257
+P 5650 5300
+F 0 "C108" H 5765 5346 50  0000 L CNN
+F 1 "C" H 5765 5255 50  0000 L CNN
+F 2 "" H 5688 5150 50  0001 C CNN
+F 3 "~" H 5650 5300 50  0001 C CNN
+	1    5650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R108
+U 1 1 625D386B
+P 5800 5700
+F 0 "R108" V 5593 5700 50  0000 C CNN
+F 1 "4.4k" V 5684 5700 50  0000 C CNN
+F 2 "" V 5730 5700 50  0001 C CNN
+F 3 "~" H 5800 5700 50  0001 C CNN
+	1    5800 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 5150 5650 5150
+Connection ~ 5500 5150
+Connection ~ 5650 5150
+Wire Wire Line
+	5650 5150 5950 5150
+Wire Wire Line
+	5650 5450 5650 5700
+Wire Wire Line
+	5950 5450 5950 5700
+Wire Wire Line
+	5950 5700 5950 5800
+Wire Wire Line
+	5950 5800 4200 5800
+Wire Wire Line
+	4200 5800 4200 3400
+Wire Wire Line
+	4200 3400 5200 3400
+Wire Wire Line
+	5200 3400 5200 3100
+Wire Wire Line
+	5200 3100 5350 3100
+Connection ~ 5950 5700
+$EndSCHEMATC
